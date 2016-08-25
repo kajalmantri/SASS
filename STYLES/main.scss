@@ -1,0 +1,39 @@
+$font-family:Helvet1ca,Sans-serif   ;
+$font-header-weight:800;
+$font-size:16px;
+$font-color:#222222;
+$success-color:#5CB85C;
+$warning-color:#23A38F;
+$error-color:#F0563D;
+$border-alert-color:#EEEEEE;
+
+%alert{
+	padding:15px;
+	margin-bottom:15px;
+	font-weight:$font-header-weight;
+	color:$font-color;
+	border:$border-alert-color;
+	border-radius:16px;
+}
+@function opacity($color,$opacity){
+	@return rgba($color,$opacity);
+}
+
+.alert{
+	@extend %alert;
+}
+.success{
+	@extend %alert;
+	border-color:$success-color;
+	background:opacity($success-color,0.6);
+}
+.error{
+	@extend %alert;
+	border-color:$error-color;
+	background:opacity($error-color,0.6);
+}
+.warning{
+	@extend %alert;
+	border-color:$warning-color;
+	background:opacity($warning-color,0.6);
+}

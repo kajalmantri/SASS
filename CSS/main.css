@@ -1,0 +1,25 @@
+.alert, .success, .error, .warning {
+  padding: 15px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #222222;
+  border: #EEEEEE;
+  border-radius: 16px;
+}
+
+.success {
+  border-color: #5CB85C;
+  background: rgba(92, 184, 92, 0.6);
+}
+
+.error {
+  border-color: #F0563D;
+  background: rgba(240, 86, 61, 0.6);
+}
+
+.warning {
+  border-color: #23A38F;
+  background: rgba(35, 163, 143, 0.6);
+}
+
+/*# sourceMappingURL=main.css.map */
